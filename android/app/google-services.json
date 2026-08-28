@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "205403297790",
+    "project_id": "rentrig-project",
+    "storage_bucket": "rentrig-project.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:205403297790:android:1db0c9053a36f5825112af",
+        "android_client_info": {
+          "package_name": "com.rentrig.app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDzd_724Sco4InpZ05AiiGZSx94ek231Hg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
