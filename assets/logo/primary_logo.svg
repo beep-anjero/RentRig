@@ -1,0 +1,7 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="256" cy="256" r="235" fill="#181818"/>
+  <g transform="translate(71.68, 71.68) scale(3.6864)">
+    <path fill-rule="evenodd" clip-rule="evenodd" d="M15 5H65L85 25V45L60 55L88 95H68L45 58H35V95H15V5ZM35 22H58L68 32L58 42H35V22Z" fill="#00FFFF"/>
+    <path d="M5 25H22V45H5V25Z" fill="#00FFFF"/>
+  </g>
+</svg>
