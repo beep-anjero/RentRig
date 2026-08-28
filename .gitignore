@@ -1,0 +1,73 @@
+# Miscellaneous & OS
+*.class
+*.log
+*.pyc
+*.swp
+.DS_Store
+Thumbs.db
+.history
+.svn
+.project
+.settings
+.idea/
+.vscode/
+*.iml
+
+# Top-level Flutter / Dart files
+.dart_tool/
+.packages
+.pub-cache/
+.pub/
+.flutter-plugins
+.flutter-plugins-dependencies
+build/
+coverage/
+
+# Flutter/Firebase generated (Optional: comment out if you want to track them in private repos)
+# lib/firebase_options.dart
+# android/app/google-services.json
+# ios/Runner/GoogleService-Info.plist
+
+# Web specific
+.node_modules/
+.webpack/
+
+# Android specific
+.gradle/
+local.properties
+*.keystore
+*.jks
+*.ap_
+*.apk
+*.aab
+
+# iOS / macOS specific
+*.moe-de-generated
+ios/Flutter/AppFrameworkInfo.plist
+**/GeneratedPluginRegistrant.swift
+**/GeneratedPluginRegistrant.m
+**/DerivedData/
+**/Pods/
+**/.symlinks/
+**/profile
+**/Debug
+**/Release
+
+# Windows specific
+/windows/flutter/ephemeral/
+/windows/flutter/generated_plugins.cmake
+/windows/runner/*.exe
+/windows/runner/*.dll
+/windows/runner/*.pdb
+
+# Linux specific
+/linux/flutter/ephemeral/
+/linux/flutter/generated_plugins.cmake
+
+# General platform-generated files
+**/generated_plugin_registrant.*
+**/generated_plugins.cmake
+
+# Secrets and environment files
+*.env
+*.secret
