@@ -9,12 +9,12 @@ import 'package:rentrig/utils/date_util.dart' as app_date_utils;
 import '../widgets/custom_action_button.dart';
 
 class ProfileScreen extends StatefulWidget {
-  final IFirestoreService firestoreService;
+  final IFirestoreService? firestoreService;
 
-  ProfileScreen({
+  const ProfileScreen({
     super.key,
-    IFirestoreService? firestoreService,
-  }) : firestoreService = firestoreService ?? FirestoreService();
+    this.firestoreService,
+  });
 
   @override
   State<ProfileScreen> createState() => _ProfileScreenState();
@@ -22,6 +22,13 @@ class ProfileScreen extends StatefulWidget {
 
 class _ProfileScreenState extends State<ProfileScreen> {
   final FirebaseAuth _auth = FirebaseAuth.instance;
+  late final IFirestoreService _firestoreService;
+
+  @override
+  void initState() {
+    super.initState();
+    _firestoreService = widget.firestoreService ?? FirestoreService();
+  }
 
   void _logout() async {
     await _auth.signOut();
@@ -89,7 +96,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         ),
         child: StreamBuilder<Map<String, dynamic>?>(
           stream: currentUser != null
-              ? widget.firestoreService.getUserProfileStream(currentUser.uid)
+              ? _firestoreService.getUserProfileStream(currentUser.uid)
               : null,
           builder: (context, snapshot) {
             if (snapshot.connectionState == ConnectionState.waiting && !snapshot.hasData) {
